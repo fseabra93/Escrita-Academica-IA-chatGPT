@@ -27,18 +27,21 @@
   <header>
     <div class="container">
       <h1>Workshop: IA Generativa para Escrita Acadêmica</h1>
-      <p class="lead">Roteiro de aula — conceitos, metodologias e exercícios práticos para servidores e pesquisadores que usam IA para produzir textos acadêmicos.</p>
+      <p class="lead">Roteiro de aula — conceitos, metodologias e exercícios práticos para estudantes 
+        e pesquisadores que usam IA para produzir textos acadêmicos.</p>
     </div>
   </header>
 
   <main class="container">
     <section class="card">
       <h2>Resumo da Aula</h2>
-      <p>Objetivo: apresentar fundamentos da IA generativa, riscos e boas práticas aplicadas à escrita acadêmica — desde geração de resumos e rascunhos até verificação de citações e anonimização de dados sensíveis.</p>
+      <p>Objetivo: apresentar fundamentos da IA generativa, riscos e boas práticas aplicadas à escrita 
+        acadêmica — desde geração de resumos e rascunhos até verificação de citações e anonimização de dados sensíveis.</p>
       <ul>
         <li>Duração sugerida: 90–120 minutos (teoria + prática)</li>
-        <li>Público: servidores, pesquisadores, estudantes e técnicos que produzem documentos acadêmicos</li>
-        <li>Resultados: saber formular prompts eficazes, aplicar templates RCTS adaptados à pesquisa e identificar riscos éticos e legais</li>
+        <li>Público: pesquisadores, estudantes e técnicos que produzem documentos acadêmicos</li>
+        <li>Resultados: saber formular prompts eficazes, aplicar templates RCTS adaptados 
+          à pesquisa e identificar riscos éticos e legais</li>
       </ul>
     </section>
 
@@ -57,12 +60,16 @@
       <div class="grid">
         <div>
           <h3>O que é IA generativa?</h3>
-          <p>Modelos que produzem texto, figuras ou áudio a partir de padrões aprendidos. No contexto acadêmico, úteis para: resumos, esboço de referências, tradução, brainstorming de hipóteses.</p>
+          <p>Modelos que produzem texto, figuras ou áudio a partir de padrões aprendidos. 
+            No contexto acadêmico, úteis para: resumos, esboço de referências, tradução, brainstorming de hipóteses.</p>
         </div>
         <div>
           <h3>LLMs, tokens e janela de contexto</h3>
-          <p class="small">LLM = modelo de linguagem de grande porte (ex.: ChatGPT, Claude, Gemini). Tokens são unidades (palavras/pedaços) — o tamanho da janela de contexto limita quanto texto pode ser processado de uma vez.</p>
-          <p class="small">Relevância prática: fragmentar textos longos antes de pedir análise e controlar o tamanho das solicitações.</p>
+          <p class="small">LLM = modelo de linguagem de grande porte (ex.: ChatGPT, Claude, Gemini). 
+            Tokens são unidades (palavras/pedaços) — o tamanho da janela de contexto limita quanto texto pode 
+            ser processado de uma vez.</p>
+          <p class="small">Relevância prática: fragmentar textos longos antes de pedir análise e 
+            controlar o tamanho das solicitações.</p>
         </div>
       </div>
     </section>
@@ -71,16 +78,18 @@
       <h2>3. Riscos, ética e conformidade</h2>
       <ul>
         <li><strong>Plágio e atribuição:</strong> revise e cite fontes corretamente.</li>
-        <li><strong>Hallucinations:</strong> verifique todas as citações e fatos — a IA pode inventar referências.</li>
+        <li><strong>Alucinações:</strong> verifique todas as citações e fatos — a IA pode inventar referências.</li>
         <li><strong>Privacidade/LGPD:</strong> não submeta dados pessoais identificáveis; anonimizar antes de enviar.</li>
         <li><strong>Responsabilidade:</strong> o autor humano é responsável pelo conteúdo final.</li>
       </ul>
-      <p class="small">Sugestão de política institucional: registrar quando IA foi usada e manter logs das versões e prompts.</p>
+      <p class="small">Sugestão de política institucional: registrar quando IA 
+        foi usada e manter logs das versões e prompts.</p>
     </section>
 
     <section class="card">
       <h2>4. Ferramentas recomendadas</h2>
-      <p>Exemplos úteis (atualize conforme sua política institucional): ChatGPT, Claude, Gemini, Perplexity, NotebookLM, e alternativas de código aberto para uso local.</p>
+      <p>Exemplos úteis (atualize conforme sua política institucional): 
+        ChatGPT, Claude, Gemini, Perplexity, NotebookLM, e alternativas de código aberto para uso local.</p>
       <div class="grid">
         <div>
           <h3>Quando usar cada uma</h3>
@@ -88,12 +97,14 @@
             <li><strong>ChatGPT:</strong> rascunhos, revisão de estilo, tradução.</li>
             <li><strong>Claude / NotebookLM:</strong> análise de documentos longos, criação de cadernos de leitura.</li>
             <li><strong>Perplexity:</strong> pesquisas com referências (útil para verificar fontes).</li>
-            <li><strong>Modelos locais:</strong> para dados sensíveis ou quando a política proíbe envio a serviços externos.</li>
+            <li><strong>Modelos locais:</strong> para dados sensíveis ou quando a política proíbe 
+              envio a serviços externos.</li>
           </ul>
         </div>
         <div>
           <h3 class="small">Dica</h3>
-          <p class="small">Verifique os termos de serviço — muitos provedores indicam se usam dados para re-treinamento.</p>
+          <p class="small">Verifique os termos de serviço — 
+            muitos provedores indicam se usam dados para re-treinamento.</p>
         </div>
       </div>
     </section>
@@ -109,7 +120,11 @@
       </ol>
 
       <h3>Exemplo adaptado (bom prompt)</h3>
-      <pre><code>Atue como assistente de pesquisa em Sociologia (ROLE). Analise o resumo do artigo anexo sobre impactos de políticas públicas na educação superior (CONTEXT). Extraia: 1) pergunta central; 2) metodologia; 3) principais resultados; 4) limitações; 5) sugestões para futuras pesquisas (TASK). Apresente em tópicos numerados, linguagem acadêmica objetiva, máximo 250 palavras (STYLE).</code></pre>
+      <pre><code>Atue como assistente de pesquisa em Sociologia (ROLE). Analise o resumo do artigo anexo 
+        sobre impactos de políticas públicas na educação superior (CONTEXT). 
+        Extraia: 1) pergunta central; 2) metodologia; 3) principais resultados; 4) limitações; 
+        5) sugestões para futuras pesquisas (TASK). Apresente em tópicos numerados, 
+        linguagem acadêmica objetiva, máximo 250 palavras (STYLE).</code></pre>
     </section>
 
     <section class="card">
@@ -117,10 +132,17 @@
       <p>Use os templates abaixo como ponto de partida — substitua os campos entre colchetes.</p>
 
       <h3>Template: Resumo crítico</h3>
-      <pre><code>"Atue como pesquisador(a) especialista em [área] (ROLE). Com base no artigo anexo sobre [tema] (CONTEXT), elabore um resumo crítico destacando: problema de pesquisa, método, resultados e três pontos críticos sobre validade/limitações (TASK). Formato: até 200 palavras em parágrafo único, linguagem acadêmica (STYLE)."</code></pre>
+      <pre><code>"Atue como pesquisador(a) especialista em [área] (ROLE). 
+        Com base no artigo anexo sobre [tema] (CONTEXT), 
+        elabore um resumo crítico destacando: problema de pesquisa, método, 
+        resultados e três pontos críticos sobre validade/limitações (TASK). 
+        Formato: até 200 palavras em parágrafo único, linguagem acadêmica (STYLE)."</code></pre>
 
       <h3>Template: Geração de seção de revisão de literatura</h3>
-      <pre><code>"Atue como assistente de revisão de literatura em [tema] (ROLE). Sintetize as principais correntes teóricas, cite até 6 autores relevantes com anos e sugira uma estrutura para a seção (TASK). Entregar: tópicos e referências sugeridas (STYLE)."</code></pre>
+      <pre><code>"Atue como assistente de revisão de literatura em [tema] (ROLE). 
+        Sintetize as principais correntes teóricas, cite até 6 autores relevantes com anos 
+        e sugira uma estrutura para a seção (TASK). 
+        Entregar: tópicos e referências sugeridas (STYLE)."</code></pre>
 
       <p class="small">Lembre: sempre verifique as referências e recupere as fontes originais antes de usar citações.</p>
     </section>
@@ -129,7 +151,8 @@
       <h2>7. Erros comuns e como evitá-los</h2>
       <ul>
         <li>Prompt vago → resultado genérico. Solução: usar RCTS e fornecer exemplos de saída esperada.</li>
-        <li>Confiar em citações geradas → podem ser inventadas. Solução: peça que a IA forneça links/verifique DOI e sempre confirme manualmente.</li>
+        <li>Confiar em citações geradas → podem ser inventadas. Solução: peça que a IA forneça links/verifique DOI 
+          e <b>sempre confirme manualmente</b>.</li>
         <li>Enviar dados pessoais → risco legal. Solução: anonimizar e/ou usar ambiente local.</li>
       </ul>
     </section>
@@ -162,7 +185,8 @@
         <dt>Posso pedir para gerar citações?</dt>
         <dd class="small">Sim, mas sempre confirme DOIs e consulte as fontes originais.</dd>
         <dt>Devo declarar uso de IA na submissão?</dt>
-        <dd class="small">Siga as políticas das revistas e da sua instituição; na dúvida, declare e documente o uso.</dd>
+        <dd class="small">Siga as políticas das revistas e da sua instituição; na dúvida, 
+          declare e documente o uso.</dd>
       </dl>
     </section>
 
