@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Workshop: IA Generativa para Escrita Acadêmica</title>
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--muted:#6b7280;--accent:#0f172a}
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--accent);margin:0}
+    header{background:linear-gradient(90deg,#1e293b, #0f172a);color:white;padding:36px 20px}
+    .container{max-width:1000px;margin:24px auto;padding:0 20px}
+    h1{margin:0;font-size:28px}
+    .lead{margin-top:8px;color:#cbd5e1}
+    section.card{background:var(--card);border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.06);padding:20px;margin-bottom:16px}
+    h2{font-size:18px;margin-top:0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    pre{background:#0b1220;color:#e6edf3;padding:12px;border-radius:8px;overflow:auto}
+    code{font-family:monospace}
+    ul{margin:0 0 12px 18px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{padding:20px;text-align:center;color:var(--muted)}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#111827;color:white;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Workshop: IA Generativa para Escrita Acadêmica</h1>
+      <p class="lead">Roteiro de aula — conceitos, metodologias e exercícios práticos para servidores e pesquisadores que usam IA para produzir textos acadêmicos.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Resumo da Aula</h2>
+      <p>Objetivo: apresentar fundamentos da IA generativa, riscos e boas práticas aplicadas à escrita acadêmica — desde geração de resumos e rascunhos até verificação de citações e anonimização de dados sensíveis.</p>
+      <ul>
+        <li>Duração sugerida: 90–120 minutos (teoria + prática)</li>
+        <li>Público: servidores, pesquisadores, estudantes e técnicos que produzem documentos acadêmicos</li>
+        <li>Resultados: saber formular prompts eficazes, aplicar templates RCTS adaptados à pesquisa e identificar riscos éticos e legais</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>1. Por que usar IA na escrita acadêmica?</h2>
+      <ul>
+        <li>Economiza tempo em tarefas repetitivas (resumos, tradução, formatação).</li>
+        <li>Ajuda na organização de ideias, revisão de estilo e geração de rascunhos.</li>
+        <li>Requer verificação humana: o pesquisador é responsável pelo conteúdo final.</li>
+      </ul>
+      <p class="small">Observação: nunca inserir dados sensíveis ou não-autorizados em LLMs públicos.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Conceitos essenciais</h2>
+      <div class="grid">
+        <div>
+          <h3>O que é IA generativa?</h3>
+          <p>Modelos que produzem texto, figuras ou áudio a partir de padrões aprendidos. No contexto acadêmico, úteis para: resumos, esboço de referências, tradução, brainstorming de hipóteses.</p>
+        </div>
+        <div>
+          <h3>LLMs, tokens e janela de contexto</h3>
+          <p class="small">LLM = modelo de linguagem de grande porte (ex.: ChatGPT, Claude, Gemini). Tokens são unidades (palavras/pedaços) — o tamanho da janela de contexto limita quanto texto pode ser processado de uma vez.</p>
+          <p class="small">Relevância prática: fragmentar textos longos antes de pedir análise e controlar o tamanho das solicitações.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3. Riscos, ética e conformidade</h2>
+      <ul>
+        <li><strong>Plágio e atribuição:</strong> revise e cite fontes corretamente.</li>
+        <li><strong>Hallucinations:</strong> verifique todas as citações e fatos — a IA pode inventar referências.</li>
+        <li><strong>Privacidade/LGPD:</strong> não submeta dados pessoais identificáveis; anonimizar antes de enviar.</li>
+        <li><strong>Responsabilidade:</strong> o autor humano é responsável pelo conteúdo final.</li>
+      </ul>
+      <p class="small">Sugestão de política institucional: registrar quando IA foi usada e manter logs das versões e prompts.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Ferramentas recomendadas</h2>
+      <p>Exemplos úteis (atualize conforme sua política institucional): ChatGPT, Claude, Gemini, Perplexity, NotebookLM, e alternativas de código aberto para uso local.</p>
+      <div class="grid">
+        <div>
+          <h3>Quando usar cada uma</h3>
+          <ul>
+            <li><strong>ChatGPT:</strong> rascunhos, revisão de estilo, tradução.</li>
+            <li><strong>Claude / NotebookLM:</strong> análise de documentos longos, criação de cadernos de leitura.</li>
+            <li><strong>Perplexity:</strong> pesquisas com referências (útil para verificar fontes).</li>
+            <li><strong>Modelos locais:</strong> para dados sensíveis ou quando a política proíbe envio a serviços externos.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="small">Dica</h3>
+          <p class="small">Verifique os termos de serviço — muitos provedores indicam se usam dados para re-treinamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5. Engenharia de prompts — Metodologia RCTS (adaptada à escrita acadêmica)</h2>
+      <p>Use o framework RCTS para obter resultados reproduzíveis:</p>
+      <ol>
+        <li><strong>Role (Papel):</strong> defina a função que a IA deve assumir — ex.: "Atue como assistente de pesquisa em neurociência com 10 anos de experiência."</li>
+        <li><strong>Context (Contexto):</strong> forneça materiais ou explique o objetivo — ex.: "Resumo do artigo anexo: DOI X..."</li>
+        <li><strong>Task (Tarefa):</strong> especifique ações claras — ex.: "Extraia 5 contribuições principais e identifique lacunas para pesquisa futura."</li>
+        <li><strong>Style (Estilo):</strong> formato e tom — ex.: "Lista numerada, linguagem acadêmica, até 300 palavras."</li>
+      </ol>
+
+      <h3>Exemplo adaptado (bom prompt)</h3>
+      <pre><code>Atue como assistente de pesquisa em Sociologia (ROLE). Analise o resumo do artigo anexo sobre impactos de políticas públicas na educação superior (CONTEXT). Extraia: 1) pergunta central; 2) metodologia; 3) principais resultados; 4) limitações; 5) sugestões para futuras pesquisas (TASK). Apresente em tópicos numerados, linguagem acadêmica objetiva, máximo 250 palavras (STYLE).</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>6. Templates úteis (copiar e adaptar)</h2>
+      <p>Use os templates abaixo como ponto de partida — substitua os campos entre colchetes.</p>
+
+      <h3>Template: Resumo crítico</h3>
+      <pre><code>"Atue como pesquisador(a) especialista em [área] (ROLE). Com base no artigo anexo sobre [tema] (CONTEXT), elabore um resumo crítico destacando: problema de pesquisa, método, resultados e três pontos críticos sobre validade/limitações (TASK). Formato: até 200 palavras em parágrafo único, linguagem acadêmica (STYLE)."</code></pre>
+
+      <h3>Template: Geração de seção de revisão de literatura</h3>
+      <pre><code>"Atue como assistente de revisão de literatura em [tema] (ROLE). Sintetize as principais correntes teóricas, cite até 6 autores relevantes com anos e sugira uma estrutura para a seção (TASK). Entregar: tópicos e referências sugeridas (STYLE)."</code></pre>
+
+      <p class="small">Lembre: sempre verifique as referências e recupere as fontes originais antes de usar citações.</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Erros comuns e como evitá-los</h2>
+      <ul>
+        <li>Prompt vago → resultado genérico. Solução: usar RCTS e fornecer exemplos de saída esperada.</li>
+        <li>Confiar em citações geradas → podem ser inventadas. Solução: peça que a IA forneça links/verifique DOI e sempre confirme manualmente.</li>
+        <li>Enviar dados pessoais → risco legal. Solução: anonimizar e/ou usar ambiente local.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>8. Atividades práticas (para a aula)</h2>
+      <ol>
+        <li>Transformar um prompt genérico em um prompt RCTS — trabalho em duplas (15 min).</li>
+        <li>Comparar saídas: pedir um resumo com dois prompts diferentes e discutir qualidade (20 min).</li>
+        <li>Exercício de verificação: peça à IA uma referência; valide DOI e encontre o possível erro (15 min).</li>
+        <li>Criação de template personalizado para o próprio projeto de pesquisa (20 min).</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>9. Checklist antes de usar IA para publicar</h2>
+      <ul>
+        <li>Assegure que nenhuma informação sensível foi submetida.</li>
+        <li>Verifique todas as citações e referências.</li>
+        <li>Registre prompts e versões geradas.</li>
+        <li>Peça revisão por pares humanos antes de submissão.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>10. FAQ essencial</h2>
+      <dl>
+        <dt>IA pode escrever meu artigo por completo?</dt>
+        <dd class="small">Não deveria. Use-a para apoio e rascunhos; autoria e responsabilidade são humanas.</dd>
+        <dt>Posso pedir para gerar citações?</dt>
+        <dd class="small">Sim, mas sempre confirme DOIs e consulte as fontes originais.</dd>
+        <dt>Devo declarar uso de IA na submissão?</dt>
+        <dd class="small">Siga as políticas das revistas e da sua instituição; na dúvida, declare e documente o uso.</dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>Referências e materiais adicionais</h2>
+      <p class="small">Este roteiro foi organizado a partir de um material de workshop sobre IA no serviço público (documento-base). Adapte políticas e exemplos conforme as normas da sua instituição.</p>
+      <p class="small">Autores e contato do material-base: Osmar Fernandes Júnior — <a href="mailto:osmar.fernandes@tre-rn.jus.br">osmar.fernandes@tre-rn.jus.br</a></p>
+    </section>
+
+    <footer>
+      <p class="small">Quer que eu converta isto em um arquivo HTML pronto para download ou em slides (PowerPoint)?</p>
+      <a class="btn" href="#">Exportar HTML</a>
+    </footer>
+  </main>
+</body>
+</html>
